@@ -46,6 +46,7 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    padding-inline: 30px;
 }
 
 .buttonsWrapper {
@@ -88,6 +89,6 @@ select option {
     background: #1b263b;
     color: white;
 }
-table td{
+table td {
     color: white;
 }

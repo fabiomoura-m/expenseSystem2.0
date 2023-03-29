@@ -2,7 +2,7 @@ import styles from './Table.module.css';
 
 export default function Table({ configs, data, ...props }) {
     return (
-        <div className="container">
+        <div className={styles.box_table}>
             <table
                 className={`${styles.table} ${
                     props.table ? 'table_fixed' : ''

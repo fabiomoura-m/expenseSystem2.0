@@ -1,3 +1,6 @@
+.box_table {
+    overflow-x: auto;
+}
 .table {
     max-width: 960px;
     width: 100%;
@@ -18,7 +21,7 @@
 }
 
 .table thead {
-    background: #1B2632;
+    background: #1b2632;
     color: white;
 }
 .table td:first-child {
