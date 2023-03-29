@@ -116,7 +116,7 @@ export default function UserProfileCategory() {
         name: 'EDITAR',
         style: {
             color: 'white',
-            backgroundColor: '#2196F3'
+            backgroundColor: '#2b4c89'
         },
         type: 'blue'
     };
@@ -196,6 +196,7 @@ export default function UserProfileCategory() {
                 />
             </div>
             <Table configs={configTable} data={expenses} />
+           
             <div className={styles.wrapperButton}>
                 <Button config={configButtonAddExpense} />
             </div>

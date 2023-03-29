@@ -1,6 +1,5 @@
 .container {
     height: 34px;
-    background-color: #f3f6f9;
     line-height: 34px;
     display: flex;
 }
@@ -11,21 +10,21 @@
 }
 
 .crumb a {
-    color: var(--green-100);
+    color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 14px;
 }
 
 .crumb a:hover {
-    color: var(--green-600);
+    color: #cdcdd0b0;
 }
 
 .crumb:after {
     content: '/';
     display: inline-block;
     margin: 0 4px;
-    color: var(--green-100);
+    color: white;
 }
 
 .crumb:last-child:after {

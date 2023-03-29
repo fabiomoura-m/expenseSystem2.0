@@ -1,8 +1,8 @@
-import { useContext, useEffect} from 'react';
+import { useContext, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Button from '../../../components/Button';
 import { userContext } from '../../../context/userContext';
-import {updateUser} from '../../../Services/users.service';
+import { updateUser } from '../../../Services/users.service';
 import styles from './Form.module.css';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css';
@@ -52,7 +52,8 @@ export default function Form({ user }) {
         name: 'EDITAR',
         style: {
             color: 'white',
-            backgroundColor: '#2196F3',
+            height: '42px',
+            backgroundColor: '#2b4c89',
             marginTop: 0
         },
         type: 'blue',
@@ -72,9 +73,10 @@ export default function Form({ user }) {
                     />
                 </div>
                 <div className={styles.boxField}>
-                    <label>Nome</label>
+                    <label htmlFor="name">Nome</label>
                     <input
                         type="text"
+                        id={'name'}
                         {...register('name', { required: true })}
                         className={errors?.name ? styles['error'] : ''}
                     />
@@ -85,11 +87,12 @@ export default function Form({ user }) {
                     )}
                 </div>
                 <div className={styles.boxField}>
-                    <label>Sobrenome</label>
+                    <label htmlFor="lastName">Sobrenome</label>
                     <input
                         type="text"
+                        id="lastName"
                         {...register('lastName', { required: true })}
-                        className={errors?.name ? styles['error'] : ''}
+                        className={errors?.lastName ? styles['error'] : ''}
                     />
                     {errors.lastName && (
                         <span className={styles.message_error}>
@@ -98,10 +101,11 @@ export default function Form({ user }) {
                     )}
                 </div>
                 <div className={styles.boxField}>
-                    <label>Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                         className={errors?.email ? styles['error'] : ''}
                         type="email"
+                        id="email"
                         {...register('email', {
                             required: {
                                 value: true,

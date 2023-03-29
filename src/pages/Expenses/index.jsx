@@ -60,8 +60,8 @@ export default function Expenses() {
     const configButton = {
         name: 'ADICIONAR DESPESA',
         style: {
-            color: 'white',
-            backgroundColor: '#2196F3'
+            color: '#FEFEFF',
+            backgroundColor: '#2b4c89'
         },
         type: 'blue',
         onClick: () => {

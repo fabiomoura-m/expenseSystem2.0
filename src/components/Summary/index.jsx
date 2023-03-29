@@ -40,12 +40,10 @@ function Summary({ data, page }) {
             <div className={styles.totalPaid}>
                 <p>TOTAL PAGO</p>
                 <p>{formatPrice(totalPaid)}</p>
-                <hr className={styles.green}></hr>
             </div>
             <div className={styles.totalExpenses}>
                 <p>TOTAL DESPESAS</p>
                 <p>{formatPrice(totalNoPaid)}</p>
-                <hr className={styles.red}></hr>
             </div>
         </div>
     );

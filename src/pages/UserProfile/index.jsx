@@ -77,7 +77,7 @@ export default function UserProfile() {
     name: "ADICIONAR DESPESA",
     style: {
       color: "white",
-      backgroundColor: "#2196F3",
+      backgroundColor: "#2b4c89",
     },
     type: 'blue',
     onClick: () => {

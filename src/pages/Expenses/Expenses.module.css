@@ -3,8 +3,12 @@
 }
 
 .containerFilters {
+    max-width: 960px;
+    width: 100%;
+
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 94px;
     gap: 30px;
 }

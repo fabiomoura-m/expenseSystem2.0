@@ -1,38 +1,52 @@
 .header {
-  background-color: var(--green-100);
+    background: #031124;
+    padding: 30px 0;
+    box-shadow: 0px 1px 4px #83a3d464;
 }
-
+.box_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 150px;
+}
+.logo img {
+    width: 100%;
+}
 .navbar {
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 78px;
-  gap: 85px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    padding: 0 78px;
+    gap: 85px;
 }
 
 .navbar a {
-  color: var(--white);
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  transition: color 0.3s;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.navbar a::before {
-  content: "";
-  display: inline-block;
-  width: 1.5px;
-  height: 14px;
-  background-color: var(--white);
-  margin-right: 10px;
-}
+/* .navbar a::before {
+    content: '';
+    display: inline-block;
+    width: 1.5px;
+    height: 14px;
+    background-color: #989da2;
+    margin-right: 10px;
+} */
 
 .navbar a:nth-child(1)::before {
-  display: none;
+    display: none;
 }
 
 .navbar a:hover {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #cdcdd0b0;
 }

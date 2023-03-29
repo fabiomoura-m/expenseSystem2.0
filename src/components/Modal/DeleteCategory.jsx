@@ -34,7 +34,7 @@ export default function DeleteCategory(props) {
     name: "SIM",
     style: {
       color: "white",
-      backgroundColor: "#2196F3",
+      backgroundColor: "#2b4c89",
     },
     type: "blue",
     onClick: () => {

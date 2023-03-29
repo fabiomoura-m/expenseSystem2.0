@@ -10,6 +10,10 @@
     padding-bottom: 38px;
 }
 
+.modal label {
+    color: black;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -38,8 +42,8 @@ form label {
     gap: 32px;
 }
 
-select,
-input {
+form select,
+form input {
     width: 392px;
     outline: none;
     border-top-style: none;

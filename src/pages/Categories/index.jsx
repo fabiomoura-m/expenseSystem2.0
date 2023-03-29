@@ -28,7 +28,7 @@ export default function Categories() {
     name: "EDITAR",
     style: {
       color: "white",
-      backgroundColor: "#2196F3",
+      backgroundColor: "#2b4c89",
     },
     type: 'blue',
   };
@@ -94,7 +94,7 @@ export default function Categories() {
     name: 'ADICIONAR CATEGORIA',
     style: {
         color: 'white',
-        backgroundColor: '#2196F3'
+        backgroundColor: '#2b4c89'
     },
     onClick: () => {
         setLayout({

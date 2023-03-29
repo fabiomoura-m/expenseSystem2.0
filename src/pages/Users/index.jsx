@@ -57,7 +57,7 @@ export default function Users() {
         name: 'ADICIONAR USUÁRIO',
         style: {
             color: 'white',
-            backgroundColor: '#2196F3'
+            backgroundColor: '#2b4c89'
         },
         type: 'blue',
         onClick: () => {
