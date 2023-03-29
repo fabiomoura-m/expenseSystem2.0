@@ -196,7 +196,7 @@ export default function UserProfileCategory() {
                 />
             </div>
             <Table configs={configTable} data={expenses} />
-           
+            {expenses.length === 0 && <p className={styles.notify_expense}>Nenhuma despesa cadastrada</p>}
             <div className={styles.wrapperButton}>
                 <Button config={configButtonAddExpense} />
             </div>

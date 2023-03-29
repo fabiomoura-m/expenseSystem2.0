@@ -31,3 +31,8 @@
     margin: 0 auto;
     text-align: end;
 }
+.notify_expense {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
