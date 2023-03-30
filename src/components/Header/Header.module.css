@@ -68,6 +68,7 @@
         padding: 0 32px 23px;
         transition: all 300ms ease;
         opacity: 0;
+        visibility: hidden;
         user-select: none;
         border-bottom-left-radius: 4px;
     }
@@ -79,5 +80,6 @@
         display: flex;
         user-select: auto;
         opacity: 1;
+        visibility: visible;
     }
 }

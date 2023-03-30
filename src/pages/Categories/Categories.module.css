@@ -14,3 +14,13 @@
     margin: 0 auto;
     text-align: end;
 }
+
+@media (max-width: 576px) {
+    .containerCategories {
+        padding-bottom: 50px;
+    }
+    .containerFilters {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+}

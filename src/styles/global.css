@@ -92,3 +92,21 @@ select option {
 table td {
     color: white;
 }
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    .buttonsWrapper {
+        flex-direction: column;
+    }
+    .buttonsWrapper button {
+        max-width: 100px;
+        width: 100%;
+        padding: 8px;
+        font-size: 13px;
+    }
+    .table_fixed {
+        table-layout: initial;
+    }
+}
