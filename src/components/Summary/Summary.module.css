@@ -7,7 +7,7 @@
 
 .totalPaid,
 .totalExpenses {
-    max-width: 341px;
+    width: 341px;
     padding: 32px;
     border-radius: 6px;
     font-weight: bold;
