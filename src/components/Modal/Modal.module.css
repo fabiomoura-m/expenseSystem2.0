@@ -135,3 +135,42 @@ form select:focus {
 input:disabled {
     color: var(--black-50);
 }
+
+@media (max-width: 768px) {
+    .modal {
+        width: auto;
+        padding: 30px;
+        min-height: auto;
+    }
+    .boxField {
+        width: 100%;
+    }
+    .titleModal h2 {
+        padding: 20px;
+        margin: 0;
+        font-size: 20px;
+    }
+    form select,
+    form input {
+        max-width: 300px;
+        width: 100%;
+        font-size: 15px;
+    }
+    form label{
+        font-size: 14px;
+    }
+    .titleModalDelete {
+        margin: 0;
+    }
+    .titleModalDelete h2 {
+        font-size: 19px;
+    }
+    .msgConfirmingDeletion {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .fieldsCategory {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
