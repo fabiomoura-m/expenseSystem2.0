@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding-top: 97px;
     padding-bottom: 200px;
+    padding-inline: 30px;
 }
 
 .titleData h2 {
@@ -35,4 +36,24 @@
     margin-top: 10px;
     text-align: center;
     color: white;
+}
+
+@media (max-width: 576px) {
+    .containerUser {
+        padding-block: 50px;
+    }
+    .titleExpenses {
+        margin-top: 50px;
+    }
+
+    .titleData h2 {
+        font-size: 20px;
+    }
+    .containerFilters {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .containerFilters div select {
+        max-width: initial;
+    }
 }
