@@ -18,9 +18,15 @@
     border-bottom-style: dotted;
     color: rgba(0, 0, 0, 0.801);
 }
-
+.containerForm .boxField:nth-child(4) {
+    flex: 2;
+}
+.containerForm input[id='name'] {
+    max-width: 150px;
+    width: 100%;
+}
 .containerForm input[type='email'] {
-    width: 250px;
+    width: 100%;
 }
 
 .boxField:focus-within label {
@@ -41,4 +47,20 @@
 
 input:disabled {
     color: var(--black-50);
+}
+
+@media (max-width: 992px) {
+    .containerForm form {
+        flex-direction: column;
+    }
+    .containerForm input[id='name'] {
+        max-width: initial;
+    }
+    .containerForm input {
+        width: initial;
+        width: 100%;
+    }
+    .containerForm {
+        margin-top: 30px;
+    }
 }

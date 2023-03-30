@@ -2,6 +2,7 @@
     max-width: 986px;
     margin: 0 auto;
     padding-top: 97px;
+    padding-inline: 30px;
     padding-bottom: 200px;
 }
 
@@ -27,4 +28,21 @@
 
 .wrapperButton {
     text-align: end;
+}
+
+@media (max-width: 576px) {
+    .containerUser {
+        padding-block: 50px;
+    }
+    .titleExpenses {
+        margin-top: 50px;
+    }
+
+    .titleData h2,
+    .titleExpenses h2 {
+        font-size: 20px;
+    }
+    .containerFilters {
+        margin-top: 50px;
+    }
 }
