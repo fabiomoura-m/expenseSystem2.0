@@ -30,3 +30,9 @@
 .crumb:last-child:after {
     display: none;
 }
+
+@media (max-width: 576px) {
+    .crumb a {
+        font-size: 13px;
+    }
+}

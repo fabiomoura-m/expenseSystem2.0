@@ -56,12 +56,17 @@
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
     .navbar {
         position: absolute;
+        overflow: hidden;
         flex-direction: column;
         top: 120px;
         gap: 30px;
-        right: 0;
+        right: 0px;
+        bottom: 0;
         background-color: #031124;
         width: 50%;
         min-width: 15rem;
