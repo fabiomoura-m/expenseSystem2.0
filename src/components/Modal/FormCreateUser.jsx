@@ -1,8 +1,8 @@
-import { useContext} from 'react';
+import { useContext } from 'react';
 import styles from './Modal.module.css';
 import Button from '../Button';
 import { layoutContext } from '../../context/layoutContext';
-import {addNewUser} from '../../Services/users.service';
+import { addNewUser } from '../../Services/users.service';
 import { userContext } from '../../context/userContext';
 import { useForm } from 'react-hook-form';
 import { Notyf } from 'notyf';
@@ -69,8 +69,9 @@ export default function FormCreateUser() {
                 </div>
                 <div className={styles.fields}>
                     <div className={styles.boxField}>
-                        <label>Nome</label>
+                        <label htmlFor="name">Nome</label>
                         <input
+                            id="name"
                             className={errors?.name ? styles['error'] : ''}
                             type="text"
                             {...register('name', { required: true })}
@@ -82,8 +83,9 @@ export default function FormCreateUser() {
                         )}
                     </div>
                     <div className={styles.boxField}>
-                        <label>Sobrenome</label>
+                        <label htmlFor="lastName">Sobrenome</label>
                         <input
+                            id="lastName"
                             className={errors?.lastName ? styles['error'] : ''}
                             type="text"
                             {...register('lastName', { required: true })}
@@ -95,8 +97,9 @@ export default function FormCreateUser() {
                         )}
                     </div>
                     <div className={styles.boxField}>
-                        <label>Email</label>
+                        <label htmlFor="email">Email</label>
                         <input
+                            id="email"
                             className={errors?.email ? styles['error'] : ''}
                             type="email"
                             {...register('email', {

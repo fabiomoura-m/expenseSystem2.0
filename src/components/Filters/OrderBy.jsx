@@ -40,7 +40,7 @@ export default function OrderBy({ orderFields, items, onOrder }) {
 
     return (
         <div className={styles.orderBy}>
-            <label>Ordernar Por:</label>
+            <label htmlFor="order">Ordernar Por:</label>
             <select id="order" onChange={handleOrderByChange}>
                 <option value=""></option>
                 {orderFields.map((order, index) => (

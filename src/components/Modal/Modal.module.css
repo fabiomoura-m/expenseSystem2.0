@@ -13,6 +13,13 @@
 .modal label {
     color: black;
 }
+.modal form select {
+    color: black;
+}
+.modal form select option {
+    background: white;
+    color: black;
+}
 
 .overlay {
     position: fixed;
@@ -156,7 +163,7 @@ input:disabled {
         width: 100%;
         font-size: 15px;
     }
-    form label{
+    form label {
         font-size: 14px;
     }
     .titleModalDelete {

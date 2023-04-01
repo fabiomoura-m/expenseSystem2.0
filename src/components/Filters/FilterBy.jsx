@@ -39,8 +39,8 @@ export default function FilterBy({
 
     return (
         <div className={styles.filterBy}>
-            <label>Filtrar Por:</label>
-            <select onChange={handleSelectChange}>
+            <label htmlFor="filter">Filtrar Por:</label>
+            <select id="filter" onChange={handleSelectChange}>
                 <option value=""></option>
                 {sortFields.map((field, index) => (
                     <option key={index} value={field.value}>

@@ -19,8 +19,20 @@ select {
     color: white;
 }
 
+.filterBy select:focus,
+.orderBy select:focus,
+.search input:focus {
+    border-color: #031124;
+}
+
+.filterBy:focus-within label,
+.orderBy:focus-within label,
+.search:focus-within label {
+    color: #031124;
+}
+
 select {
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 @media (max-width: 992px) {

@@ -110,8 +110,9 @@ export default function FormCreateExpense() {
             )}
           </div>
           <div className={styles.boxField}>
-            <label>Categoria</label>
+            <label htmlFor="category">Categoria</label>
             <select
+              id="category"
               className={errors?.categoryID ? styles["error"] : ""}
               {...register("categoryID", { required: true })}
             >
@@ -131,8 +132,9 @@ export default function FormCreateExpense() {
             )}
           </div>
           <div className={styles.boxField}>
-            <label>Usuário</label>
+            <label htmlFor="user">Usuário</label>
             <select
+              id="user"
               className={errors?.userID ? styles["error"] : ""}
               {...register("userID", { required: true })}
             >
@@ -151,8 +153,9 @@ export default function FormCreateExpense() {
             )}
           </div>
           <div className={styles.boxField}>
-            <label>Valor</label>
+            <label htmlFor="amount">Valor</label>
             <input
+              id="amount"
               className={errors?.amount ? styles["error"] : ""}
               type="text"
               {...register("amount", {

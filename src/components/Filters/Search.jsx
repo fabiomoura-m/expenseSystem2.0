@@ -24,8 +24,9 @@ export default function Search({ findFields, items, onFiltered, onTerm }) {
     return (
         <>
             <div className={styles.search}>
-                <label>Buscar</label>
+                <label htmlFor="search">Buscar</label>
                 <input
+                    id="search"
                     className={styles.inputSearch}
                     type="text"
                     onChange={handlerChange}

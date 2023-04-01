@@ -1,8 +1,8 @@
-import { useContext, useEffect} from 'react';
+import { useContext, useEffect } from 'react';
 import styles from './Modal.module.css';
 import Button from '../Button';
 import { layoutContext } from '../../context/layoutContext';
-import {addNewExpense} from '../../Services/expenses.service';
+import { addNewExpense } from '../../Services/expenses.service';
 import { userContext } from '../../context/userContext';
 import { useForm } from 'react-hook-form';
 import { maskMoney } from '../../utils/maskMoney';
@@ -67,8 +67,7 @@ export default function FormCreateExpenseByCategory() {
             backgroundColor: '#2b4c89'
         },
         type: 'blue',
-        onClick: () => {
-        }
+        onClick: () => {}
     };
 
     const configCancelButton = {
@@ -118,8 +117,9 @@ export default function FormCreateExpenseByCategory() {
                         <input type="text" {...register('userName')} disabled />
                     </div>
                     <div className={styles.boxField}>
-                        <label>Valor</label>
+                        <label htmlFor="amount">Valor</label>
                         <input
+                            id="amount"
                             className={errors?.amount ? styles['error'] : ''}
                             type="text"
                             {...register('amount', {
