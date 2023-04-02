@@ -1,6 +1,6 @@
 .header {
     background: #031124;
-    padding: 30px 0px;
+    padding: 10px 0px;
     box-shadow: 0px 1px 4px #83a3d464;
 }
 .box_content {
@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 .logo {
-    width: 150px;
+    width: 100px;
 }
 .logo img {
     width: 100%;
@@ -73,7 +73,7 @@
         position: absolute;
         overflow: hidden;
         flex-direction: column;
-        top: 120px;
+        top: 70px;
         gap: 30px;
         right: 0px;
         bottom: 0;
