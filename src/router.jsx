@@ -13,6 +13,7 @@ export function Router() {
             <Route path="/despesas" element={<Expenses />} />
             <Route path="/usuarios" element={<Users />} />
             <Route path="/usuarios/:userId" element={<UserProfile />} />
+            <Route path="/usuarios/:userId/categoria" element={<UserProfile />} />
             <Route
                 path="/usuarios/:userId/categoria/:categoriaId"
                 element={<UserProfileCategory />}
