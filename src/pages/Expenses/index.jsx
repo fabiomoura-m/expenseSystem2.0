@@ -124,6 +124,11 @@ export default function Expenses() {
                 />
             </div>
             <Table configs={config} data={expenses} />
+            {expenses.every(expense => expense.show === false) && (
+                <p className={styles.notify_expense}>
+                    Nenhum usuário encontrado
+                </p>
+            )}
             <div className={styles.wrapperButton}>
                 <Button config={configButton} />
             </div>

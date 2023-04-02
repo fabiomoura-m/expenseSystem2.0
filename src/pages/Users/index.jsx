@@ -14,7 +14,8 @@ export default function Users() {
     const { layout, setLayout } = useContext(layoutContext);
     const navigate = useNavigate();
 
-    const { users, setUsers, usersInitial, fetchUsers } = useContext(userContext);
+    const { users, setUsers, usersInitial, fetchUsers } =
+        useContext(userContext);
 
     useEffect(() => {
         fetchUsers();
@@ -101,6 +102,11 @@ export default function Users() {
                 />
             </div>
             <Table configs={configTable} data={users} />
+            {users.every(expense => expense.show === false) && (
+                <p className={styles.notify_expense}>
+                    Nenhum usuário encontrado
+                </p>
+            )}
             <div className={styles.wrapperButton}>
                 <Button config={configButton} />
             </div>

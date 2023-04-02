@@ -19,6 +19,12 @@
     text-align: end;
 }
 
+.notify_expense {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .containerFilters {
         flex-direction: column;

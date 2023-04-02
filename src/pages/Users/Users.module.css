@@ -16,6 +16,12 @@
     text-align: end;
 }
 
+.notify_expense {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
 @media (max-width: 576px) {
     .containerUsers {
         padding-bottom: 50px;
