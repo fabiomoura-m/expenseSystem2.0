@@ -57,6 +57,7 @@ input:disabled {
         max-width: initial;
     }
     .containerForm input {
+        max-width: initial;
         width: initial;
         width: 100%;
     }

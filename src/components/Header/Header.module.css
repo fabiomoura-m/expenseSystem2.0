@@ -41,13 +41,23 @@
     background-color: #989da2;
     margin-right: 10px;
 } */
-
+.navbar a {
+    display: flex;
+    gap: 5px;
+}
 .navbar a:nth-child(1)::before {
     display: none;
 }
 
 .navbar a:hover {
     text-decoration: none;
+    color: #cdcdd0b0;
+}
+.navbar a svg {
+    transition: 0.4s;
+    color: white;
+}
+.navbar a:hover svg {
     color: #cdcdd0b0;
 }
 

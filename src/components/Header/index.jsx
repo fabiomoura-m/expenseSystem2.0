@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import logo from '../../assets/logo_transparent.png';
-import { BiMenuAltRight } from 'react-icons/bi';
-import { useEffect, useRef, useState } from 'react';
+import { BiMenuAltRight, BiCategory } from 'react-icons/bi';
+import { FiUsers } from 'react-icons/fi';
+import { TbReportMoney } from 'react-icons/tb';
+import { useState } from 'react';
 
 export default function Header() {
     const [menuOpened, setMenuOpened] = useState(false);
@@ -24,18 +26,21 @@ export default function Header() {
                         to="/despesas"
                         onClick={() => setMenuOpened(prev => !prev)}
                     >
+                        <TbReportMoney size={24} />
                         Despesas
                     </Link>
                     <Link
                         to="/usuarios"
                         onClick={() => setMenuOpened(prev => !prev)}
                     >
+                        <FiUsers size={22} />
                         Usuários
                     </Link>
                     <Link
                         to="/categorias"
                         onClick={() => setMenuOpened(prev => !prev)}
                     >
+                        <BiCategory size={24} />
                         Categorias
                     </Link>
                 </nav>
