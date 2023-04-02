@@ -1,4 +1,4 @@
-const url = "https://expense-manager-mach1-api.vercel.app/";
+const url = "https://expense-manager-mach1-api.vercel.app";
 
 async function addNewUser(body) {
   const headers = new Headers();
