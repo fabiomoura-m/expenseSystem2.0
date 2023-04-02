@@ -1,4 +1,4 @@
-const url = "http://localhost:3000";
+const url = "https://expense-manager-mach1-api.vercel.app/";
 
 async function addNewCategory(body) {
   const headers = new Headers();
